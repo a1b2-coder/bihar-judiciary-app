@@ -1,10 +1,29 @@
 body {
-    background-color: #f4f6fb;
-    text-align: center;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: linear-gradient(to right, #0f172a, #1e40af);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 100vh;
 }
 
 h1 {
-    color: navy;
-    margin-top: 100px;
+  font-size: 50px;
+}
+
+p {
+  font-size: 22px;
+}
+
+button {
+  background: gold;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
 }
