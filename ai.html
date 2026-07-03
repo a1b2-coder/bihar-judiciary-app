@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Doubt Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>🤖 AI Doubt Solver</h1>
+
+<p>Ask your Bihar Judiciary doubts</p>
+
+<input
+  type="text"
+  id="question"
+  placeholder="Type your question here..."
+  style="width:80%;padding:15px;border-radius:10px;border:none;font-size:18px;"
+>
+
+<br><br>
+
+<button onclick="solveDoubt()">
+  Ask AI
+</button>
+
+<br><br>
+
+<div class="card" id="answer">
+  AI answer will appear here.
+</div>
+
+<br>
+
+<a href="index.html">
+  <button>⬅ Back to Home</button>
+</a>
+
+</div>
+
+<script>
+function solveDoubt() {
+
+  let q = document.getElementById("question").value;
+
+  let answerBox = document.getElementById("answer");
+
+  if(q.trim() === "") {
+    answerBox.innerHTML = "Please enter a question.";
+    return;
+  }
+
+  answerBox.innerHTML =
+    "Demo Mode:<br><br>" +
+    "Your question was: <b>" + q + "</b><br><br>" +
+    "In Version 2, this will connect to a real AI backend.";
+}
+</script>
+
+</body>
+</html>
